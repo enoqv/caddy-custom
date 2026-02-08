@@ -13,16 +13,14 @@ target "_common" {
 target "_common_multi_platforms" {
   platforms = [
     "linux/amd64",
-    "linux/arm64",
-    "linux/arm/v6",
-    "linux/arm/v7"
+    "linux/arm64"
   ]
 }
 
 target "_common_tags" {
   tags = [
-    "ghcr.io/enoqv/vaultwarden-backup:latest",
-    "ghcr.io/enoqv/vaultwarden-backup:${VERSION}"
+    "ghcr.io/enoqv/caddy-with-dns01:latest",
+    "ghcr.io/enoqv/caddy-with-dns01:${VERSION}"
   ]
 }
 
