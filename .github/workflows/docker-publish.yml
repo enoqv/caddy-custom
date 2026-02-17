@@ -8,7 +8,7 @@ name: Docker
 on:
   push:
     # Publish semver tags as releases.
-    tags: ["*.*.*-custom.*"]
+    tags: ["*.*.*-*"]
 
 env:
   # Use docker.io for Docker Hub if empty
@@ -50,8 +50,8 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           labels: |
-            org.opencontainers.image.title=caddy-with-dns01
-            org.opencontainers.image.description=Caddy with Cloudflare DNS01 provider
+            org.opencontainers.image.title=caddy-custom
+            org.opencontainers.image.description=Caddy with custom plugins
             org.opencontainers.image.authors=enoqv
             org.opencontainers.image.version=${{ env.VERSION }}
       -

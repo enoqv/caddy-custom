@@ -19,8 +19,8 @@ target "_common_multi_platforms" {
 
 target "_common_tags" {
   tags = [
-    "ghcr.io/enoqv/caddy-with-dns01:latest",
-    "ghcr.io/enoqv/caddy-with-dns01:${VERSION}"
+    "ghcr.io/enoqv/caddy-custom:latest",
+    "ghcr.io/enoqv/caddy-custom:${VERSION}"
   ]
 }
 
